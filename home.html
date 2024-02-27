@@ -9,29 +9,40 @@
   <link rel="stylesheet" href="style.css">
 
 </head>
-
-
 <body>
+  <div class="header">
 
-    <div class="header">
-        <div class="menu">
-          <div><a href="">Home</a></div>
-          <div><a href="">Gioielli</a></div>
-          <div><a href="">Chi siamo</a></div>
-          <div><a href="">Contattaci</a></div>
-        </div>
-        <div class="logo">
-          <img src="logo1.avif" alt="">
-        </div>
-        <div class="hamburger">
-          <span></span>
-          <span></span>
-          <span></span>
-        </div>
-      
-      </div>
+    <div class="hamburger">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+
+    <div class="logo">
+        <img class="immagine" src="logo1.avif" alt="">
+    </div>
+  </div>
+  
+
+  </div>
 
   <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/flickity/3.0.0/flickity.pkgd.min.js" integrity="sha512-achKCfKcYJg0u0J7UDJZbtrffUwtTLQMFSn28bDJ1Xl9DWkl/6VDT3LMfVTo09V51hmnjrrOTbtg4rEgg0QArA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+  <script>
+    $( document ).ready(function() {
+
+      /* Open Panel */
+      $( ".hamburger" ).on('click', function() {
+        $(".menu").toggleClass("menu--open");
+      });
+      
+    });
+
+    ScrollReveal().reveal('.reveal',{ distance: '100px', duration: 1500, easing:'cubic-bezier(.215, .61, .355, 1)', interval: 600 } );
+
+    ScrollReveal().reveal('.zoom',{ duration: 1500, easing:'cubic-bezier(.215, .61, .355, 1)', interval: 200, scale:0.65, mobile:false} );
+  </script>
 
 </body>
 </html>
