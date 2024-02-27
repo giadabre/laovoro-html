@@ -29,12 +29,19 @@
         <li><a href="">Single</a></li>
         <li><a href="">Contact</a></l>
       </ul>
-  
     </div>
 
     <div class="logo">
         <img class="immagine" src="logo1.avif" alt="">
     </div>
+
+    <div class="hero">
+      <div>
+        <img src="home.jpg" alt="">
+      </div>
+    </div>
+
+    
   </div>
   
   <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
@@ -47,7 +54,7 @@
       $( ".hamburger" ).on('click', function() {
         $(".menu").toggleClass("menu--open");
         $(".logo").toggleClass("logo--none");
-        $(".header").toggleClass("header--padding");
+        
       });
       
     });
