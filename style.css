@@ -1,43 +1,263 @@
+/* HEADER */
+
 .header{
     width:100%;
     display: flex;
     flex-wrap: wrap;
-    padding:17px;
-    position:fixed;
+    padding:0px;
     background-color: #fff;
+    height: 100px;
 }
-/* background-color:#f4f2e6 ; */
 
+@media (max-width: 768px){
+   .header{
+    height: 50px;
+   }
+}
 a{
     text-decoration: none ;
     color: #000;
 }
 
-.hamburger{
-    display:block;
-    width:30px;
-    height:30px;
-    position:absolute;
-    top:40px;
-    left:30px;
+p{
+    line-height:28px;
+    color: #666;
+    font-weight: 300;
+  }
+  .big-text{
+    font-size: 70px;
+    font-weight: 900;
+  }
+  .med-text{
+    font-size: 40px;
+  }
+  .normal-text{
+    font-size: 20px;
+  }
+  .small-text{
+    font-size: 14px;
+  }
+  .intro-text{
+    text-transform: uppercase;
+    font-size: 20px;
+    font-weight: bold;
   }
 
-.hamburger span{
-    background: #000;
-    height:3px;
-    width:100%;
-    display: block;
-    margin-bottom:5px; 
+/* HAMBURGER */
+
+
+input[type="checkbox"]{
+    visibility: hidden;
+    display: none;
 }
 
+.bar{
+    position: absolute;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    top:45px;
+    left:55px;
+    z-index: 21;
+}
+
+.bar .middle{
+    height: 3px;
+    width: 40px;
+    background: #000;
+    position: absolute;
+    transition: 0.3s ease; 
+}
+
+.bar .top{
+    bottom:7px;
+    height: 3px;
+    width: 40px;
+    background: #000;
+    position: absolute;
+    transition: 0.3s ease; 
+}
+
+.bar .bottom{
+    top:10px;
+    bottom:14px;
+    height: 3px;
+    width: 40px;
+    background: #000;
+    position: absolute;
+    transition: 0.3s ease; 
+}
+
+input[type="checkbox"]:checked ~ .bar .top{
+    transform:rotate(-45deg);
+    width: 70px;
+    transform-origin: right;
+    top:-25px;
+}
+
+input[type="checkbox"]:checked ~ .bar .bottom{
+    transform:rotate(45deg);
+    width: 70px;
+    transform-origin: right;
+    top:25px;
+}
+
+input[type="checkbox"]:checked ~ .bar .middle{
+    transform: translate(20px);
+    opacity: 0; 
+}
+
+
+@media (max-width: 768px){
+
+    .bar{
+        top:35px;
+        left: 35px;
+    }
+
+    .bar .middle{
+        height: 3px;
+        width: 30px;
+    }
+
+    .bar .top{
+        bottom:3.5px;
+        height: 3px;
+        width: 30px;
+    }
+
+    .bar .bottom{
+        top:7px;
+        height: 2.5px;
+        width: 30px;
+    }
+ }
+
+/* MENU */
+
+.menu{
+   display:none;
+   transition: all 1s cubic-bezier(.215, .61, .355, 1);
+  }
+
+.menu--open{
+    background:#f4f2e6;
+    height:100vh;
+    width:100%;
+    display:ruby;
+    z-index: 10;
+
+   
+}
+.menu ul {
+   padding:200px;
+}
+
+.menu li {
+    list-style: none;
+    padding:30px;
+ }
+
+.menu a:hover{
+    color: #424040;
+    font-size:45px;
+    text-decoration:underline;
+}
+
+@media (max-width: 768px){
+ .menu ul{
+    padding:100px;
+ }
+ .menu li{
+    padding:10px;
+ }
+ .menu a{
+    font-size: 15px;
+ }
+
+ .menu a:hover{
+    color: #424040;
+    font-size:17px;
+}
+}
+
+
+
+/* LOGO */
 .logo{
     margin: 0 auto;
 }
+
 .immagine{
-    width: 170px;
-    height: 170px;
+    width: 100px;
+    height: 100px;
     transform: translateX(-25%);
 }
+
+@media (max-width: 768px){
+    .immagine{
+        width: 60px;
+        height: 60px;
+    }
+    .menu ul{
+        padding:100px;
+    }
+}
+
+
+/* HERO */
+
+.hero { 
+    width:100%;
+    position:relative;  
+    top:0;
+    display: flex;
+    padding:100px 0;
+    background-size:cover;
+    background:url('home.jpg') no-repeat center center;
+    height:100vh;
+    
+}
+
+.cover__content{
+    position:absolute;
+    width:auto;
+    top:60%;
+    right: 45%;
+
+ }
+
+.button{
+    padding:18px 28px;
+    background:#000;
+    color: #f4f2e6;
+    border-radius: 4px;
+    display: inline-block;
+  }
+
+.button:hover{
+    background: #424040;
+    transform: scale(1.1);
+     
+}
+
+@media (max-width: 768px){
+   .hero{
+    max-width: 768px;
+    max-height: 100px;
+    background-size: contain;
+    margin-top: 20px;
+   }
+   .button{
+      padding:4px 8px;
+   }
+   
+   .hero a{
+    font-size: 5px;
+   }
+    
+}
+ 
 
 /* footer */
 
