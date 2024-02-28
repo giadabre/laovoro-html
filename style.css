@@ -178,7 +178,6 @@ input[type="checkbox"]:checked ~ .bar .middle{
  .menu a:hover{
     color: #424040;
     font-size:17px;
-    list-style: ;
 }
 }
 
