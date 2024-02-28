@@ -9,6 +9,11 @@
     height: 100px;
 }
 
+@media (max-width: 768px){
+   .header{
+    height: 50px;
+   }
+}
 a{
     text-decoration: none ;
     color: #000;
@@ -99,9 +104,34 @@ input[type="checkbox"]:checked ~ .bar .bottom{
 
 input[type="checkbox"]:checked ~ .bar .middle{
     transform: translate(20px);
-
     opacity: 0; 
 }
+
+
+@media (max-width: 768px){
+
+    .bar{
+        top:35px;
+        left: 35px;
+    }
+
+    .bar .middle{
+        height: 3px;
+        width: 30px;
+    }
+
+    .bar .top{
+        bottom:3.5px;
+        height: 3px;
+        width: 30px;
+    }
+
+    .bar .bottom{
+        top:7px;
+        height: 2.5px;
+        width: 30px;
+    }
+ }
 
 /* MENU */
 
@@ -130,16 +160,31 @@ input[type="checkbox"]:checked ~ .bar .middle{
 
 .menu a:hover{
     color: #424040;
-    font-size:42px;
+    font-size:45px;
 }
+
+@media (max-width: 768px){
+ .menu ul{
+    padding:100px;
+ }
+ .menu li{
+    padding:10px;
+ }
+ .menu a{
+    font-size: 15px;
+ }
+
+ .menu a:hover{
+    color: #424040;
+    font-size:17px;
+}
+}
+
+
 
 /* LOGO */
 .logo{
     margin: 0 auto;
-}
-
-.logo--none{
-  display:none;
 }
 
 .immagine{
@@ -150,8 +195,8 @@ input[type="checkbox"]:checked ~ .bar .middle{
 
 @media (max-width: 768px){
     .immagine{
-        width: 80px;
-        height: 80px;
+        width: 60px;
+        height: 60px;
     }
     .menu ul{
         padding:100px;
@@ -173,14 +218,12 @@ input[type="checkbox"]:checked ~ .bar .middle{
     
 }
 
-.hero--none{
-    display: none;
-}
 .cover__content{
     position:absolute;
     width:auto;
     top:60%;
     right: 45%;
+
  }
 
 .button{
@@ -195,6 +238,23 @@ input[type="checkbox"]:checked ~ .bar .middle{
     background: #424040;
     transform: scale(1.1);
      
+}
+
+@media (max-width: 768px){
+   .hero{
+    max-width: 768px;
+    max-height: 100px;
+    background-size: contain;
+    margin-top: 20px;
+   }
+   .button{
+      padding:4px 8px;
+   }
+   
+   .hero a{
+    font-size: 5px;
+   }
+    
 }
 
 
