@@ -15,19 +15,24 @@
 
 </head>
 <body>
+
+
   <div class="header">
 
-    <div class="hamburger">
-      <span></span>
-      <span></span>
-      <span></span>
-    </div>
+    <label>
+      <input type="checkbox">
+      <div class="bar">
+        <span class="top"></span>
+        <span class="middle"></span>
+        <span class="bottom"></span>
+      </div>
+    </label>
 
-    <div class="menu">
+    <div class="menu med-text">
       <ul>
-        <li><a href="">Home</a></li>
-        <li><a href="">Single</a></li>
-        <li><a href="">Contact</a></l>
+        <li><a href="">Gioielli</a></li>
+        <li><a href="">Chi siamo</a></li>
+        <li><a href="">Contattaci</a></l>
       </ul>
     </div>
 
@@ -36,13 +41,10 @@
     </div>
   </div>
 
-  <div class="hero">
-    
+  <div class="hero" >
     <div class="cover__content">
       <a class="button" href="">Discover more</a>
     </div>
-    <img src="home.jpg" alt="">
-    
   </div>
 
   
@@ -56,11 +58,8 @@
     $( document ).ready(function() {
 
       /* Open Panel */
-      $( ".hamburger" ).on('click', function() {
+      $( ".bar" ).on('click', function() {
         $(".menu").toggleClass("menu--open");
-        $(".logo").toggleClass("logo--none");
-        $(".hero").toggleClass("hero--none");
-        
       });
       
     });
