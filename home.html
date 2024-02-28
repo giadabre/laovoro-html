@@ -34,15 +34,20 @@
     <div class="logo">
         <img class="immagine" src="logo1.avif" alt="">
     </div>
+  </div>
 
-    <div class="hero">
-      <div>
-        <img src="home.jpg" alt="">
-      </div>
+  <div class="hero">
+    
+    <div class="cover__content">
+      <a class="button" href="">Discover more</a>
     </div>
-
+    <img src="home.jpg" alt="">
     
   </div>
+
+  <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Animi mollitia inventore, at hic, minus aperiam cum, fugit nostrum voluptatibus deleniti quod consectetur et molestiae earum atque sed voluptas? Saepe, numquam.</p>
+
+
   
   <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/flickity/3.0.0/flickity.pkgd.min.js" integrity="sha512-achKCfKcYJg0u0J7UDJZbtrffUwtTLQMFSn28bDJ1Xl9DWkl/6VDT3LMfVTo09V51hmnjrrOTbtg4rEgg0QArA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
@@ -54,6 +59,7 @@
       $( ".hamburger" ).on('click', function() {
         $(".menu").toggleClass("menu--open");
         $(".logo").toggleClass("logo--none");
+        $(".hero").toggleClass("hero--none");
         
       });
       
