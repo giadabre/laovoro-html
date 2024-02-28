@@ -194,69 +194,25 @@ input[type="checkbox"]:checked ~ .bar .middle{
     transform: translateX(-25%);
 }
 
-@media (max-width: 768px){
-    .immagine{
-        width: 60px;
-        height: 60px;
-    }
-    .menu ul{
-        padding:100px;
-    }
+/* footer */
+
+.footer{
+    width: 100%;
+    padding: 70px 0;
+    background: #fde17c;
+}
+/* 
+.footer .inner{
+    padding-left: 0;
+    padding-right: 5%;
 }
 
+.footer p{
+    font-size: 13px;
+    color: 777;
+    margin-bottom: 0;
+} */
 
-/* HERO */
-
-.hero { 
-    width:100%;
-    position:relative;  
-    top:0;
-    display: flex;
-    padding:100px 0;
-    background-size:cover;
-    background:url('home.jpg') no-repeat center center;
-    height:100vh;
-    
-}
-
-.cover__content{
-    position:absolute;
-    width:auto;
-    top:60%;
-    right: 45%;
-
- }
-
-.button{
-    padding:18px 28px;
-    background:#000;
-    color: #f4f2e6;
-    border-radius: 4px;
-    display: inline-block;
-  }
-
-.button:hover{
-    background: #424040;
-    transform: scale(1.1);
-     
-}
-
-@media (max-width: 768px){
-   .hero{
-    max-width: 768px;
-    max-height: 100px;
-    background-size: contain;
-    margin-top: 20px;
-   }
-   .button{
-      padding:4px 8px;
-   }
-   
-   .hero a{
-    font-size: 5px;
-   }
-    
-}
 
 
 
