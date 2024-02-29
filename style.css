@@ -4,6 +4,7 @@
     width:100%;
     display: flex;
     flex-wrap: wrap;
+    padding:17px;
     padding:0px;
     background-color: #fff;
     height: 100px;
@@ -194,6 +195,7 @@ input[type="checkbox"]:checked ~ .bar .middle{
     transform: translateX(-25%);
 }
 
+
 @media (max-width: 768px){
     .immagine{
         width: 60px;
@@ -263,43 +265,67 @@ input[type="checkbox"]:checked ~ .bar .middle{
 
 .footer{
     width: 100%;
-    padding: 70px 0;
-    background: #fde17c;
-}
-/* 
-.footer .inner{
-    padding-left: 0;
-    padding-right: 5%;
+    padding: 100px 15%;
+    margin-top: 150px;
+    background: black;
+    color: #fff;
+    display: flex;
 }
 
-.footer p{
-    font-size: 13px;
-    color: 777;
-    margin-bottom: 0;
-} */
+.footer div{
+    text-align: center;
+}
 
 
+.col-2{
+    flex-grow: 2;
+}
 
+.footer div h3{
+    font-weight: 300;
+    margin-bottom: 30px;
+    letter-spacing: 1px;
+}
 
+.col-1 a{
+    display: block;
+    text-decoration: none;
+    color: #fff;
+    margin-bottom: 10px;
+}
 
+form input{
+    width: 400px;
+    height: 45px;
+    border-radius: 4px;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 40px;
+    outline: none;
+    border: none;
+}
 
+form button{
+    background: transparent;
+    border: 2px solid white;
+    color: #fff;
+    border-radius: 30px;
+    padding: 10px 30px;
+    font-size: 15px;
+    cursor: pointer;
+}
 
+/* icone social */
 
+.social-icons{
+    margin-top: 30px;
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+.social-icons i{
+    font-size: 22px;
+    margin: 10px;
+    cursor: pointer;
+}
 
 
 
