@@ -133,6 +133,11 @@ a {
     margin-bottom: 10px;
 }
 
+.col-1 a:hover{
+    color: #f2f4a6;
+
+}
+
 form input {
     width: 400px;
     height: 45px;
