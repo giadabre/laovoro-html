@@ -259,49 +259,6 @@ input[type="checkbox"]:checked ~ .bar .middle{
 }
  
 
-/* footer */
-
-.footer{
-    width: 100%;
-    padding: 70px 0;
-    background: #fde17c;
-}
-/* 
-.footer .inner{
-    padding-left: 0;
-    padding-right: 5%;
-}
-
-.footer p{
-    font-size: 13px;
-    color: 777;
-    margin-bottom: 0;
-} */
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 *,
