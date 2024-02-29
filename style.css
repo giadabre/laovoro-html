@@ -1,304 +1,175 @@
-/* HEADER */
-
-.header{
-    width:100%;
+.header {
+    width: 100%;
     display: flex;
     flex-wrap: wrap;
-    padding:0px;
+    padding: 17px;
     background-color: #fff;
-    height: 100px;
 }
 
-@media (max-width: 768px){
-   .header{
-    height: 50px;
-   }
-}
-a{
-    text-decoration: none ;
+/* background-color:#f4f2e6 ; */
+
+a {
+    text-decoration: none;
     color: #000;
 }
 
-p{
-    line-height:28px;
-    color: #666;
-    font-weight: 300;
-  }
-  .big-text{
-    font-size: 70px;
-    font-weight: 900;
-  }
-  .med-text{
-    font-size: 40px;
-  }
-  .normal-text{
-    font-size: 20px;
-  }
-  .small-text{
-    font-size: 14px;
-  }
-  .intro-text{
-    text-transform: uppercase;
-    font-size: 20px;
-    font-weight: bold;
-  }
-
-/* HAMBURGER */
-
-
-input[type="checkbox"]{
-    visibility: hidden;
-    display: none;
-}
-
-.bar{
+.hamburger {
+    display: block;
+    width: 30px;
+    height: 30px;
     position: absolute;
-    cursor: pointer;
-    display: flex;
-    justify-content: center;
-    top:45px;
-    left:55px;
-    z-index: 21;
+    top: 40px;
+    left: 30px;
 }
 
-.bar .middle{
-    height: 3px;
-    width: 40px;
+.hamburger span {
     background: #000;
-    position: absolute;
-    transition: 0.3s ease; 
-}
-
-.bar .top{
-    bottom:7px;
     height: 3px;
-    width: 40px;
-    background: #000;
-    position: absolute;
-    transition: 0.3s ease; 
+    width: 100%;
+    display: block;
+    margin-bottom: 5px;
 }
 
-.bar .bottom{
-    top:10px;
-    bottom:14px;
-    height: 3px;
-    width: 40px;
-    background: #000;
-    position: absolute;
-    transition: 0.3s ease; 
-}
-
-input[type="checkbox"]:checked ~ .bar .top{
-    transform:rotate(-45deg);
-    width: 70px;
-    transform-origin: right;
-    top:-25px;
-}
-
-input[type="checkbox"]:checked ~ .bar .bottom{
-    transform:rotate(45deg);
-    width: 70px;
-    transform-origin: right;
-    top:25px;
-}
-
-input[type="checkbox"]:checked ~ .bar .middle{
-    transform: translate(20px);
-    opacity: 0; 
-}
-
-
-@media (max-width: 768px){
-
-    .bar{
-        top:35px;
-        left: 35px;
-    }
-
-    .bar .middle{
-        height: 3px;
-        width: 30px;
-    }
-
-    .bar .top{
-        bottom:3.5px;
-        height: 3px;
-        width: 30px;
-    }
-
-    .bar .bottom{
-        top:7px;
-        height: 2.5px;
-        width: 30px;
-    }
- }
-
-/* MENU */
-
-.menu{
-   display:none;
-   transition: all 1s cubic-bezier(.215, .61, .355, 1);
-  }
-
-.menu--open{
-    background:#f4f2e6;
-    height:100vh;
-    width:100%;
-    display:ruby;
-    z-index: 10;
-
-   
-}
-.menu ul {
-   padding:200px;
-}
-
-.menu li {
-    list-style: none;
-    padding:30px;
- }
-
-.menu a:hover{
-    color: #424040;
-    font-size:45px;
-    text-decoration:underline;
-}
-
-@media (max-width: 768px){
- .menu ul{
-    padding:100px;
- }
- .menu li{
-    padding:10px;
- }
- .menu a{
-    font-size: 15px;
- }
-
- .menu a:hover{
-    color: #424040;
-    font-size:17px;
-}
-}
-
-
-
-/* LOGO */
-.logo{
+.logo {
     margin: 0 auto;
 }
 
-.immagine{
-    width: 100px;
-    height: 100px;
+.immagine {
+    width: 170px;
+    height: 170px;
     transform: translateX(-25%);
 }
 
-@media (max-width: 768px){
-    .immagine{
-        width: 60px;
-        height: 60px;
-    }
-    .menu ul{
-        padding:100px;
-    }
-}
+/* caselle che scorrono */
 
-
-/* HERO */
-
-.hero { 
-    width:100%;
-    position:relative;  
-    top:0;
+.poster {
     display: flex;
-    padding:100px 0;
-    background-size:cover;
-    background:url('home.jpg') no-repeat center center;
-    height:100vh;
-    
+    height: 100vh;
+    width: 100%;
+    align-items: center;
 }
 
-.cover__content{
-    position:absolute;
-    width:auto;
-    top:60%;
-    right: 45%;
-
- }
-
-.button{
-    padding:18px 28px;
-    background:#000;
-    color: #f4f2e6;
-    border-radius: 4px;
-    display: inline-block;
-  }
-
-.button:hover{
-    background: #424040;
-    transform: scale(1.1);
-     
+.poster__img {
+    width: 100%;
+    height: 100%;
 }
 
-@media (max-width: 768px){
-   .hero{
-    max-width: 768px;
-    max-height: 100px;
-    background-size: contain;
-    margin-top: 20px;
-   }
-   .button{
-      padding:4px 8px;
-   }
-   
-   .hero a{
-    font-size: 5px;
-   }
-    
+.poster__img img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
 }
- 
+
+.poster__content {
+    width: 35%;
+    padding: 50px;
+}
+
+@media (max-width: 768px) {
+    .poster {
+        flex-wrap: wrap;
+        height: auto;
+    }
+
+    .poster__img,
+    .poster__content {
+        width: 100%;
+    }
+}
+
+.main-carousel {
+    padding: 40px 0;
+}
+
+.carousel-cell {
+    height: 350px;
+    width: 290px;
+    margin-right: 40px;
+}
+
+.carousel-cell__content {
+    width: 100%;
+    height: 100%;
+    background: #ebed97b4;
+    /* border-radius: 100%; */
+    line-height: 350px;
+    text-align: center;
+}
+
+
+/* fine caselle*/
+
 
 /* footer */
 
-.footer{
+.footer {
     width: 100%;
-    padding: 70px 0;
-    background: #fde17c;
-}
-/* 
-.footer .inner{
-    padding-left: 0;
-    padding-right: 5%;
+    padding: 100px 15%;
+    margin-top: 150px;
+    background: black;
+    color: #fff;
+    display: flex;
 }
 
-.footer p{
-    font-size: 13px;
-    color: 777;
-    margin-bottom: 0;
-} */
+.footer div {
+    text-align: center;
+}
 
 
+.col-2 {
+    flex-grow: 2;
+}
 
+.footer div h3 {
+    font-weight: 300;
+    margin-bottom: 30px;
+    letter-spacing: 1px;
+}
 
+.col-1 a {
+    display: block;
+    text-decoration: none;
+    color: #fff;
+    margin-bottom: 10px;
+}
 
+.col-1 a:hover{
+    color: #f2f4a6;
 
+}
 
+form input {
+    width: 400px;
+    height: 45px;
+    border-radius: 4px;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 40px;
+    outline: none;
+    border: none;
+}
 
+form button {
+    background: transparent;
+    border: 2px solid white;
+    color: #fff;
+    border-radius: 30px;
+    padding: 10px 30px;
+    font-size: 15px;
+    cursor: pointer;
+}
 
+/* icone social */
 
+.social-icons {
+    margin-top: 30px;
+}
 
-
-
-
-
-
-
-
-
-
-
-
+.social-icons i {
+    font-size: 22px;
+    margin: 10px;
+    cursor: pointer;
+}
 
 
 
@@ -307,7 +178,7 @@ input[type="checkbox"]:checked ~ .bar .middle{
 *,
 *:before,
 *:after {
-  -webkit-box-sizing: border-box;
-     -moz-box-sizing: border-box;
-          box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
 }
