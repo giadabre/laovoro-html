@@ -8,66 +8,6 @@ a {
 
 
 
-
-/* caselle che scorrono */
-
-.poster {
-    display: flex;
-    height: 100vh;
-    width: 100%;
-    align-items: center;
-}
-
-.poster__img {
-    width: 100%;
-    height: 100%;
-}
-
-.poster__img img {
-    object-fit: cover;
-    width: 100%;
-    height: 100%;
-}
-
-.poster__content {
-    width: 35%;
-    padding: 50px;
-}
-
-@media (max-width: 768px) {
-    .poster {
-        flex-wrap: wrap;
-        height: auto;
-    }
-
-    .poster__img,
-    .poster__content {
-        width: 100%;
-    }
-}
-
-.main-carousel {
-    padding: 40px 0;
-}
-
-.carousel-cell {
-    height: 350px;
-    width: 290px;
-    margin-right: 40px;
-}
-
-.carousel-cell__content {
-    width: 100%;
-    height: 100%;
-    background: #ebed97b4;
-    /* border-radius: 100%; */
-    line-height: 350px;
-    text-align: center;
-}
-
-
-/* fine caselle*/
-
 /* anelli.html */
 
 section{
@@ -108,10 +48,15 @@ section{
     font-size: 1.3rem;
 }
 
+/* .box-container{
+    width: 10%;
+} */
+
 .products .box-container{
     display: flex;
     flex-wrap: wrap;
     gap: 1.5rem;
+    
 }
 
 .products .box-container .box{
@@ -139,6 +84,7 @@ section{
     padding-top: 2rem;
     overflow: hidden;
 }
+
 
 .products .box-container .box .image img{
     height: 25rem;
