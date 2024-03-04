@@ -335,7 +335,7 @@ input[type="checkbox"]:checked ~ .bar .middle{
     top:22px;
     left: 100px;
     position: absolute;
-    display:none;
+    
 }
 .categorie h1{
     position: relative;
@@ -398,16 +398,23 @@ input[type="checkbox"]:checked ~ .bar .middle{
 
 
 /* CAROUSEL */
-
+.in-evidence{
+    top:27px;
+    position: relative;
+}
 .main-carousel{
-    padding:100px 0;
+    padding-top:70px;
+    margin-bottom: 100px;
     background-color:#fff;
   }
   .carousel-cell{
     height:550px;
     width:400px;
     margin-right: 40px;  
-    background:#e9e5e1;
+    background:#fff;
+    border: 2px solid #e9e5e1;
+    position: relative;
+    
   }
   
   .carousel-cell__content{
@@ -424,6 +431,21 @@ input[type="checkbox"]:checked ~ .bar .middle{
     height: 100%;
   }
 
+  .carousel-cell h1{
+    bottom:17px;
+    left: 10px;
+    color: #000;
+    position: absolute;
+    font-size: 15px;
+  }
+
+  .carousel-cell p{
+    bottom:-15px;
+    left: 10px;
+    position: absolute;
+    font-weight: 500;
+  }
+
 
 /* POSTER */
 
@@ -433,8 +455,7 @@ input[type="checkbox"]:checked ~ .bar .middle{
     width: 100%;
     align-items: center;
     background-color: #f9f8f3;
-  }
-  
+}  
   .poster__ing{
     width:65%;
     height: 100%;
