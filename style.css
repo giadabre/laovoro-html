@@ -179,7 +179,6 @@ input[type="checkbox"]:checked ~ .bar .middle{
 
 
 
-
 /* LOGO */
 .logo{
     margin: 0 auto;
@@ -192,7 +191,6 @@ input[type="checkbox"]:checked ~ .bar .middle{
 }
 
 @media (max-width: 768px){
-
     .menu ul{
         padding:100px;
     }
@@ -256,6 +254,18 @@ input[type="checkbox"]:checked ~ .bar .middle{
  }
 
 /* CATEGORIE */
+
+.expl{
+    width: 100%;
+    display: inline-block;
+    position: relative;
+}
+.span{
+    background: #000;
+    height: 2px;
+    width: 100%;
+    position:absolute;
+}
 .categorie{
     height: auto;
     background: #f9f8f3;
@@ -276,8 +286,6 @@ input[type="checkbox"]:checked ~ .bar .middle{
     padding-right: 70px;
     
 
-
-    
 }
 
 .categorie_container a{
@@ -290,10 +298,9 @@ input[type="checkbox"]:checked ~ .bar .middle{
     display: flex;
     flex-wrap: wrap;
     overflow: hidden;
-   
 }
 
-.categorie_container img{
+.categorie_container a img{
     max-width: 100%; 
     max-height: 100%; 
     display:block;
@@ -303,17 +310,18 @@ input[type="checkbox"]:checked ~ .bar .middle{
        
 }
 
-.categorie_container img:hover{
+.categorie_container a:hover{
     transform: scale(1.034);
+    background:#f9f8f3;
+    opacity: 0.8;
 }
 
 .categorie_container a:after{
   opacity: 0.2;
   background: #000;
-
 }
 
-.categorie_container div {
+.categorie_container a div {
     position: absolute;
     color:#000;
     padding: 10px;
@@ -325,17 +333,26 @@ input[type="checkbox"]:checked ~ .bar .middle{
     font-weight: 500;
 }
 .testo{
-    position: relative;
-    width: 300px;
+    display: inline-block;
+    width: auto;
 }
-.categorie_container span{
+.categorie_container a span{
     background: #000;
     height: 2px;
     width:100%;
-    top:22px;
+    bottom: 25px;
     left: 100px;
     position: absolute;
+    display: none;
     
+
+}
+
+.categorie_container p{
+    margin: 0;
+    position: absolute;
+    color: #000;
+    font-size: 33px;
 }
 .categorie h1{
     position: relative;
@@ -425,6 +442,8 @@ input[type="checkbox"]:checked ~ .bar .middle{
     line-height: 350px;
     text-align: center;
   }
+
+
 
   .carousel-cell__content img{
     width: 100%;
