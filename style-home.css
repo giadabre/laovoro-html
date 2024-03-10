@@ -36,6 +36,7 @@ p{
     line-height:28px;
     color: #666;
     font-weight: 300;
+    font-family: Arial, Helvetica, sans-serif;
   }
   .big-text{
     font-size: 70px;
@@ -158,9 +159,7 @@ input[type="checkbox"]:checked ~ .bar .middle{
     height:100vh;
     width:100%;
     display:ruby;
-    z-index: 10;
-
-   
+    z-index: 10;  
 }
 .menu ul {
    padding:200px;
@@ -255,17 +254,6 @@ input[type="checkbox"]:checked ~ .bar .middle{
 
 /* CATEGORIE */
 
-.expl{
-    width: 100%;
-    display: inline-block;
-    position: relative;
-}
-.span{
-    background: #000;
-    height: 2px;
-    width: 100%;
-    position:absolute;
-}
 .categorie{
     height: auto;
     background: #f9f8f3;
@@ -286,24 +274,57 @@ input[type="checkbox"]:checked ~ .bar .middle{
     padding-right: 70px;
 }
 
-.categorie_container{
-
+.rings{
+    background:url('anelli.jpeg') no-repeat center center ;
+    background-size: cover;
+    width:33.33%;
+    display: block;
+    height: 320px;
     position: relative;
     display: flex;
     flex-wrap: wrap;
-    margin: 0 auto;
-    width:790px;
-    height: auto;
-    padding-top: 200px;
-    padding-bottom: 100px;
-    padding-left: 70px;
-    padding-right: 70px;
-    
-
+    border: 4px solid #f9f8f3;
 }
 
-.categorie_container a{
-    
+.rings:hover{
+    background:url('orecchini.jpeg') no-repeat center center ;
+}
+.earrings{
+    background:url('orecchini.jpeg') no-repeat center center ;
+    width:33.33%;
+    display: block;
+    background-size: cover;
+    height: 320px;
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    border: 4px solid #f9f8f3;
+}
+.necklaces{
+    background:url('collane.jpeg') no-repeat center center ;
+    background-size: cover;
+    width:33.33%;
+    display: block;
+    height: 320px;
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    border: 4px solid #f9f8f3;
+}
+.charms{
+    background:url('pendanti4.jpeg') no-repeat center center ;
+    background-size: cover;
+    width:33.33%;
+    display: block;
+    height: 320px;
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    border: 4px solid #f9f8f3;
+}
+.new-arrivals{
+    background:url('novità2.jpeg') no-repeat center center ;
+    background-size: cover;
     width:33.33%;
     display: block;
     padding:4px;
@@ -311,89 +332,110 @@ input[type="checkbox"]:checked ~ .bar .middle{
     position: relative;
     display: flex;
     flex-wrap: wrap;
-    overflow: hidden;
+    border: 4px solid #f9f8f3;
+}
+.promotions{
+    background:url('promozioni.jpeg') no-repeat center center ;
+    background-size: cover;
+    width:33.33%;
+    display: block;
+    padding:4px;
+    height: 320px;
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    border: 4px solid #f9f8f3;
 }
 
-.categorie_container a img{
-    max-width: 100%; 
-    max-height: 100%; 
-    display:block;
-    object-fit: fill;
-    height: 100vh;
-    width: 100%;
-       
-}
-
-.categorie_container a:hover{
+.rings:hover {
     transform: scale(1.034);
-    background:#f9f8f3;
-    opacity: 0.8;
+    background: linear-gradient( rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.3)),
+    url('anelli.jpeg') no-repeat center center ;
+    background-size: cover;
 }
 
-.categorie_container a:after{
-  opacity: 0.2;
-  background: #000;
+.earrings:hover {
+    transform: scale(1.034);
+    background: linear-gradient( rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.3)),
+    url('orecchini.jpeg') no-repeat center center ;
+    background-size: cover;
 }
 
-.categorie_container a div {
-    position: absolute;
-    color:#000;
-    padding: 10px;
-    height: 50px;
-    bottom: 10px;
-    left: 0;
-    width: auto; 
-    font-size: 33px;
-    font-weight: 500;
-}
-.testo{
-    display: inline-block;
-    width: auto;
-}
-.categorie_container a span{
-    background: #000;
-    height: 2px;
-    width:100%;
-    bottom: 25px;
-    left: 100px;
-    position: absolute;
+.necklaces:hover {
+    transform: scale(1.034);
+    background: linear-gradient( rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.3)),
+    url('collane.jpeg') no-repeat center center ;
+    background-size: cover;
 }
 
-.categorie_container p{
-    margin: 0;
-    position: absolute;
-    color: #000;
-    font-size: 33px;
+.rings:hover {
+    transform: scale(1.034);
+    background: linear-gradient( rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.3)),
+    url('anelli.jpeg') no-repeat center center ;
+    background-size: cover;
 }
+.charms:hover {
+    transform: scale(1.034);
+    background: linear-gradient( rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.3)),
+    url('pendanti4.jpeg') no-repeat center center ;
+    background-size: cover;
+}
+
+.new-arrivals:hover {
+    transform: scale(1.034);
+    background: linear-gradient( rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.3)),
+    url('novità2.jpeg') no-repeat center center ;
+    background-size: cover;
+}
+
+.promotions:hover {
+    transform: scale(1.034);
+    background: linear-gradient( rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.3)),
+    url('promozioni.jpeg') no-repeat center center ;
+    background-size: cover;
+}
+
+.cards__card{
+   position: absolute;
+   bottom:5px;
+   left:5px;
+   width: 100%;
+   display: flex;
+   flex-wrap: wrap;
+}
+.cards__card__txt{
+   display: inline-block;
+   font-size: 33px;
+}
+.card__cards__riga{
+    height:100%;
+    left:10px;
+}
+
 .categorie h1{
     position: relative;
-    top:180px;
     text-align: center;
     font-weight: bolder;
+    padding:130px 0 50px 0;
 
-}
-
-.testo{
-    display: inline-flex;
 }
 
 @media (max-width:768px) {
 
-    .categorie_container{
+    .cards{
         padding-left: 30px;
         padding-right: 30px;
         width: 470px;
         margin-top: 60px;
     }
 
-    .categorie_container a{
+    .cards a{
         height: 250px;
     }
 
 
-    .categorie_container div{
+    .cards div{
         font-size: 24px;
-        bottom: -10px;
       
     }
     
@@ -401,26 +443,24 @@ input[type="checkbox"]:checked ~ .bar .middle{
 
 @media (max-width:500px) {
 
-    .categorie_container{
+    .cards{
         width: 350px;
         margin-top: 30px;
         padding-top: 100px;
     }
-    .categorie_container a{
+    .cards a{
         height: 190px;
     }
 
-    .categorie_container div{
-        font-size: 20px;
-        bottom: -10px;
+    .cards div{
+        font-size: 17px;
+       
     }
     
     .categorie h1{
         top:50px;
     }
-    .new-arrivals{
-        bottom:20px;
-    }
+    
     
 }
 
@@ -439,10 +479,8 @@ input[type="checkbox"]:checked ~ .bar .middle{
     height:550px;
     width:400px;
     margin-right: 40px;  
-    background:#fff;
     border: 2px solid #e9e5e1;
     position: relative;
-    
   }
   
   .carousel-cell__content{
@@ -474,6 +512,17 @@ input[type="checkbox"]:checked ~ .bar .middle{
     left: 10px;
     position: absolute;
     font-weight: 500;
+  }
+
+  .flickity-page-dots {
+    bottom: -22px;
+  }
+
+  .flickity-page-dots .flickity-page-dot {
+    height: 4px;
+    width: 40px;
+    margin: 0;
+    border-radius: 0;
   }
 
 
@@ -513,6 +562,11 @@ input[type="checkbox"]:checked ~ .bar .middle{
     }
   }
   
+
+
+
+
+
 
 
 
