@@ -191,18 +191,60 @@
         width: 100%;
         top:0;
         display:ruby;
-        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
    }
    .slider{
         display: none;
    }
-   .main-carousel{
-        position: absolute;
-   }
    .descrizione{
         width: 100%;
    }
+
+   .bottone2{
+        display: flex;
+        flex-wrap: wrap;
+
+    }
+    .bottone2 h2{
+       width: 100%;
+    }
+}
+.flickity-page-dots {
+    position: absolute;
+    width: 100%;
     
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+
+    bottom: 15%;
+    transform: rotate(90deg);
+    left:55%;
+}
+@media (max-width:480px) {
+
+    .main-carousel{
+        width: 100%;
+        height: 65vh;
+    }
+    .carousel-cell{
+        width: 100%;
+        height: 65vh;
+    }
+
+    .flickity-page-dots {
+        bottom: -20px;
+        transform: rotate(0deg);
+        left:0;
+    }
+
+    .descrizione{
+        padding:10px;
+        margin-top:50px;
+    }
 }
 
 
@@ -329,19 +371,6 @@ https://flickity.metafizzy.co
     height: 60%
 }
 
-.flickity-page-dots {
-    position: absolute;
-    width: 100%;
-    
-    text-align: center;
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-
-    bottom: 15%;
-    transform: rotate(90deg);
-    left:55%;
-}
 
 .flickity-rtl .flickity-page-dots {
     direction: rtl
