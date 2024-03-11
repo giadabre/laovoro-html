@@ -37,7 +37,21 @@
     <div class="menu med-text">
       <ul>
         <li><a href="home.html">home</a></li>
-        <li><a href="">our jewels </a></li>
+        <li>
+          <div class="details-h">
+            <div class="details__title-h">
+                Our jewels
+            </div>
+            <div class="details__content-h">
+              <a class="italiana-regular" href="">>rings</a>
+              <a class="italiana-regular" href="">>earrings</a>
+              <a class="italiana-regular" href="">>necklaces</a>
+              <a class="italiana-regular" href="">>pendants</a>
+              <a class="italiana-regular" href="">>new arrivals</a>
+              <a class="italiana-regular" href="">>promotions</a>
+            </div>
+        </div>
+        </li>
         <li><a href="">who we are</a></l>
       </ul>
     </div>
@@ -72,8 +86,21 @@
               </ul>
             </div>
         </div>
-      </div>
 
+        <div class="bottone2">
+          <h2>earring quantity</h2>
+            <div class="selector-container">
+              <ul>
+                  <li class="active pair"> Pair</li>
+                  <li class="single">Single</li>
+              </ul>
+              <div class="line-selector"></div>
+            </div>
+            <a class="add-to-cart" href="">Add to cart</a>
+        </div>
+      </div>
+     
+    <div class="slider">
       <div class="main-carousel"  data-flickity='{ "cellAlign": "left", "contain": true   }'>
         <div class="carousel-cell">
           <div class="carousel-cell__content zoom">
@@ -100,9 +127,11 @@
             <img src="hoop5.webp" alt="">
           </div>
         </div>
+      </div>
     </div>
+     
 
-    <div class="bottone">
+    <div class="bottone1">
         <h2>earring quantity</h2>
         <div class="selector-container">
           <ul>
@@ -126,9 +155,14 @@
             $(".menu").toggleClass("menu--open");
         });
 
-        $( ".details" ).on('click', function() {    
-                $(this).find(".details__content").toggleClass("details__content--open");
+        $( ".details-h" ).on('click', function() {    
+                $(this).find(".details__content-h").toggleClass("details__content--open");
             });
+
+          $( ".details" ).on('click', function() {    
+              $(this).find(".details__content").toggleClass("details__content--open");
+          });
+
 
         var nav = $(".selector-container");
         var pose = 0;
