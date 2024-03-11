@@ -65,6 +65,18 @@
     background-color: #000;
 }
 
+.arial{
+    font-family: arial;
+}
+
+.stone img:hover{
+    transform: scale(1.1);
+}
+
+.scale{
+    transform: scale(1.1);
+}
+
 .active{
     color:#000
 }
@@ -143,9 +155,16 @@
     display: ruby;
     width: 100%;
   }
-  .bottone2 h2{
+  .earring-qty{
     float: left;
     margin:60px 0 0 0;
+  }
+  .stone-title{
+    margin-top:10px;
+    float: left;
+  }
+  .stone-img{
+    margin: 0;
   }
   .slider{
     width: 60%;
