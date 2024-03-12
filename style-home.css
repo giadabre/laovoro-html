@@ -156,7 +156,6 @@ input[type="checkbox"]:checked ~ .bar .middle{
 .details__title-h:hover{
     color: #424040;
     font-size:45px;
-    text-decoration:underline;
 }
 .details__content-h {
     max-height:0px; 
@@ -181,7 +180,23 @@ input[type="checkbox"]:checked ~ .bar .middle{
     max-height:200px;
 }
 
-
+@media (max-width:768px) {
+    .menu li{
+        padding:20px;
+    }
+    .details__content-h a{
+        font-size: 35px;
+    }
+    
+    .details__title-h:hover{
+        color: #424040;
+        font-size:35px;
+    }
+    
+    .details__content--open{
+        max-height:400px;
+    }
+}
 
 /* LOGO */
 .logo{
@@ -420,7 +435,7 @@ input[type="checkbox"]:checked ~ .bar .middle{
 }
 .cards__card__txt{
    display: inline-block;
-   font-size: 200%;
+   font-size: 180%;
 }
 .card__cards__riga{
     height:100%;
@@ -549,6 +564,7 @@ input[type="checkbox"]:checked ~ .bar .middle{
   }
 
 @media (max-width:1920px) {
+
     .carousel-cell h1{
         bottom:3.5%;
         left:5%;
@@ -562,19 +578,14 @@ input[type="checkbox"]:checked ~ .bar .middle{
       } 
 }
 
-@media (max-width:1920px) {
-    .carousel-cell h1{
-        bottom:3.5%;
-        left:5%;
-        font-size: 100%;
-      }
+@media (max-width:390px) {
+    .carousel-cell{
+        margin: auto;
+        width: 100%;
+    }
     
-     .carousel-cell p{
-        bottom:1.5%;
-        left: 6%;
-        font-size: 80%;
-      } 
 }
+
 
 
 
