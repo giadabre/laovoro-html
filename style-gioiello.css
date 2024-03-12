@@ -5,8 +5,6 @@
     display: flex;
     flex-wrap: wrap;
     background:#f9f8f3;
-    padding:0 20px 0 20px;
-
 }
 .descrizione{
     top:100px;
@@ -34,7 +32,22 @@
     height: auto;
 }
 
+.bottone1-p{
+    width: 27.5%;
+    top:300px;
+    position: relative;
+    padding:10px;
+    height: auto;
+}
+
 .bottone2{
+    width: 100%;
+    display: none;
+    padding:10px;
+    height: auto;
+}
+
+.bottone2-p{
     width: 100%;
     display: none;
     padding:10px;
@@ -154,6 +167,9 @@
   .bottone2{
     display: ruby;
     width: 100%;
+  }
+  .bottone2-p{
+    margin-top: 40px;
   }
   .earring-qty{
     float: left;

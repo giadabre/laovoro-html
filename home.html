@@ -12,6 +12,8 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
   <script src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script>
+  <script src="https://kit.fontawesome.com/35fdc67f04.js" crossorigin="anonymous"></script>
+  <script src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script>
 
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -41,16 +43,15 @@
                 Our jewels
             </div>
             <div class="details__content-h">
-              <a class="italiana-regular" href="">>rings</a>
-              <a class="italiana-regular" href="">>earrings</a>
-              <a class="italiana-regular" href="">>necklaces</a>
-              <a class="italiana-regular" href="">>pendants</a>
-              <a class="italiana-regular" href="">>new arrivals</a>
-              <a class="italiana-regular" href="">>promotions</a>
+              <a class="italiana-regular" href="anelli.html">>rings</a>
+              <a class="italiana-regular" href="orecchini.html">>earrings</a>
+              <a class="italiana-regular" href="collane.html">>necklaces</a>
+              <a class="italiana-regular" href="pendants.html">>pendants</a>
+              <a class="italiana-regular" href="newarrivals.html">>new arrivals</a>
+              <a class="italiana-regular" href="prodottiscontati.html">>promotions</a>
             </div>
         </div>
         </li>
-        <li><a href=""> Who we are</a></l>
       </ul>
     </div>
 
@@ -70,38 +71,38 @@
   <div class="categorie zoom">
     <h1>Explore our products</h1>
     <div class="cards">
-      <a class="rings">
+      <a class="rings" href="anelli.html">
         <div class="cards__card">
           <div class="cards__card__txt">Rings</div>
           <div class="cards__card__riga">          </div>
         </div>
       </a>
-      <a class="earrings" href="">
+      <a class="earrings" href="orecchini.html">
         <div class="cards__card">
           <div class="cards__card__txt">Earrings</div>
           <div class="cards__card__riga"></div>
         </div>
       </a>
-      <a class="necklaces" href="">
+      <a class="necklaces" href="collane.html">
         <div class="cards__card">
           <div class="cards__card__txt">Necklaces</div>
           <div class="cards__card__riga"></div>
         </div>
       </a>
-      <a class="charms" href="">
+      <a class="charms" href="pendants.html">
         <div class="cards__card">
-          <div class="cards__card__txt">Charms</div>
+          <div class="cards__card__txt">Pendants</div>
           <div class="cards__card__riga"></div>
         </div>
       </a>
 
-      <a class="new-arrivals" href="">
+      <a class="new-arrivals" href="newarrivals.html">
         <div class="cards__card">
           <div class="cards__card__txt">New arrivals</div>
           <div class="cards__card__riga"></div>
         </div>
       </a>
-      <a class="promotions" href="">
+      <a class="promotions" href="prodottiscontati.html">
         <div class="cards__card">
           <div class="cards__card__txt">Promotions</div>
           <div class="cards__card__riga"></div>
@@ -113,7 +114,7 @@
 
 
   <div class="in-evidence-p">
-    <h1 class="in-evidence">In evidence:</h1>
+    <h1 class="in-evidence">Most picked:</h1>
     <div class="main-carousel"  data-flickity='{ "cellAlign": "left", "contain": true }'>
       <a class="carousel-cell" href="hoop-earring.html">
         <div class="carousel-cell__content zoom">
@@ -129,11 +130,11 @@
           <img src="evidenza2.webp" alt="">
         </div>
       </a>
-      <a class="carousel-cell" href="claudine-ring.html">
-        <h1>Claudine Twist Ring</h1>
-         <p>$54.00</p>
+      <a class="carousel-cell" href="star-ring.html">
+        <h1>North Star Ring</h1>
+         <p>$56.00</p>
         <div class="carousel-cell__content zoom">
-          <img src="evidenza3.webp" alt="">
+          <img src="star-ring1.webp" alt="">
         </div>
       </a>
       <a class="carousel-cell" href="luna-ring-emerald.html">
@@ -181,6 +182,35 @@
     </div>
   </div>
 
+  <div class="footer">
+    <div class="col-1">
+      <h3>USEFUL LINKS</h3>
+      <a href="#">About</a>
+      <a href="#">Services</a>
+      <a href="#">Contact</a>
+      <a href="#">Shop</a>
+      <a href="#">Blog</a>
+    </div>
+    <div class="col-2">
+      <h3>NEWSLETTER</h3>
+      <form>
+        <input type="email" placeholder="Your Email Address" required>
+        <br>
+        <button type="submit">SUBSCRIBE NOW</button>
+      </form>
+    </div>
+    <div class="col-3">
+      <h3>CONTACT</h3>
+      <p>123, XYZ Road, BSK 3 <br>Bangalore, Karnataka, IN</p>
+      <div class="social-icons">
+        <i class="fa-brands fa-facebook"></i>
+        <i class="fa-brands fa-twitter"></i>
+        <i class="fa-brands fa-instagram"></i>
+        <i class="fa-brands fa-whatsapp"></i>
+      </div>
+    </div>
+  </div>
+
 
 
 
@@ -191,7 +221,7 @@
   <script>
     $( document ).ready(function() {
 
-      /* Open Panel */
+
       $( ".bar" ).on('click', function() {
         $(".menu").toggleClass("menu--open");
         $( ".details__content").removeClass("details__content--open")
