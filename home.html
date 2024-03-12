@@ -7,21 +7,180 @@
   <title>Document</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
   <link rel="stylesheet" href="style-home.css">
-  <!-- caselle che scorrono -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flickity/2.2.1/flickity.min.css" integrity="sha512-ztsAq/T5Mif7onFaDEa5wsi2yyDn5ygdVwSSQ4iok5BPJQGYz1CoXWZSA7OgwGWrxrSrbF0K85PD5uLpimu4eQ==" crossorigin="anonymous" />
-  <!-- fine caselle che scorrono -->
-  
-  <!-- per footer -->
-  <script src="https://kit.fontawesome.com/35fdc67f04.js" crossorigin="anonymous"></script>
-  <script src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script>
-  <!-- per font -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flickity/3.0.0/flickity.min.css" integrity="sha512-fJcFDOQo2+/Ke365m0NMCZt5uGYEWSxth3wg2i0dXu7A1jQfz9T4hdzz6nkzwmJdOdkcS8jmy2lWGaRXl+nFMQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Bacasime+Antique&family=Elsie+Swash+Caps:wght@400;900&family=Italiana&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+  <script src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script>
+  <script src="https://kit.fontawesome.com/35fdc67f04.js" crossorigin="anonymous"></script>
+  <script src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script>
 
-</head>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bacasime+Antique&family=Elsie+Swash+Caps:wght@400;900&family=Italiana&display=swap" rel="stylesheet">
+
 <body class="italiana-regular">
 
+
+  <div class="header">
+
+    <label>
+      <input type="checkbox">
+      <div class="bar">
+        <span class="top"></span>
+        <span class="middle"></span>
+        <span class="bottom"></span>
+      </div>
+    </label>
+
+    <div class="menu med-text">
+      <ul>
+        <li><a href="home.html">Home</a></li>
+        <li>
+          <div class="details-h">
+            <div class="details__title-h">
+                Our jewels
+            </div>
+            <div class="details__content-h">
+              <a class="italiana-regular" href="anelli.html">>rings</a>
+              <a class="italiana-regular" href="orecchini.html">>earrings</a>
+              <a class="italiana-regular" href="collane.html">>necklaces</a>
+              <a class="italiana-regular" href="pendants.html">>pendants</a>
+              <a class="italiana-regular" href="newarrivals.html">>new arrivals</a>
+              <a class="italiana-regular color" href="prodottiscontati.html">>promotions</a>
+            </div>
+        </div>
+        </li>
+      </ul>
+    </div>
+
+    <div class="logo">
+        <img class="immagine" src="logo2.jpeg" alt="">
+    </div>
+
+  </div>
+
+  <div class="hero zoom" >
+    <div class="cover__content">
+      <a class="button" href="">Discover more</a>
+    </div>
+  </div>
+
+  
+  <div class="categorie zoom">
+    <h1>Explore our products</h1>
+    <div class="cards">
+      <a class="rings" href="anelli.html">
+        <div class="cards__card">
+          <div class="cards__card__txt">Rings</div>
+          <div class="cards__card__riga">          </div>
+        </div>
+      </a>
+      <a class="earrings" href="orecchini.html">
+        <div class="cards__card">
+          <div class="cards__card__txt">Earrings</div>
+          <div class="cards__card__riga"></div>
+        </div>
+      </a>
+      <a class="necklaces" href="collane.html">
+        <div class="cards__card">
+          <div class="cards__card__txt">Necklaces</div>
+          <div class="cards__card__riga"></div>
+        </div>
+      </a>
+      <a class="charms" href="pendants.html">
+        <div class="cards__card">
+          <div class="cards__card__txt">Pendants</div>
+          <div class="cards__card__riga"></div>
+        </div>
+      </a>
+
+      <a class="new-arrivals" href="newarrivals.html">
+        <div class="cards__card">
+          <div class="cards__card__txt">New arrivals</div>
+          <div class="cards__card__riga"></div>
+        </div>
+      </a>
+      <a class="promotions" href="prodottiscontati.html">
+        <div class="cards__card">
+          <div class="cards__card__txt">Promotions</div>
+          <div class="cards__card__riga"></div>
+        </div>
+      </a>
+    </div>
+    
+    </div>
+
+
+  <div class="in-evidence-p">
+    <h1 class="in-evidence">Most picked:</h1>
+    <div class="main-carousel"  data-flickity='{ "cellAlign": "left", "contain": true }'>
+      <a class="carousel-cell" href="hoop-earring.html">
+        <div class="carousel-cell__content zoom">
+          <img src="evidenza1.webp" alt="">
+        </div>
+        <h1>Classic Hoop Earring Medium</h1>
+        <p>$50.00</p>
+      </a>
+      <a class="carousel-cell" href="teardroop-earring.html">
+        <h1>Bold Teardroop Hoop Earrings</h1>
+        <p>$80.00</p>
+        <div class="carousel-cell__content zoom">
+          <img src="evidenza2.webp" alt="">
+        </div>
+      </a>
+      <a class="carousel-cell" href="star-ring.html">
+        <h1>North Star Ring</h1>
+         <p>$56.00</p>
+        <div class="carousel-cell__content zoom">
+          <img src="star-ring1.webp" alt="">
+        </div>
+      </a>
+      <a class="carousel-cell" href="luna-ring-emerald.html">
+        <h1>Luna Layered Ring Emerald</h1>
+        <p>$120.00</p>
+        <div class="carousel-cell__content zoom">
+          <img src="evidenza4.webp" alt="">
+        </div>
+      </a>
+      <a class="carousel-cell" href="teardrop-necklace.html">
+        <h1>Teardrop Necklace</h1>
+        <p>$90.00</p>
+        <div class="carousel-cell__content zoom">
+          <img src="evidenza5.webp" alt="">
+        </div>
+      </a>
+      <a class="carousel-cell" href="ribbed-necklace.html">
+        <h1>Ribbed Maison Heart Necklace</h1>
+        <p>$110.00</p>
+        <div class="carousel-cell__content zoom">
+          <img src="evidenza6.webp" alt="">
+        </div>
+      </a>
+      <a class="carousel-cell" href="maison-pendant.html">
+        <div class="carousel-cell__text">
+          <h1>Maison Oval Locket</h1>
+          <p>$40.00</p>
+        </div>
+        <div class="carousel-cell__content zoom">
+          <img src="evidenza7.webp" alt="">
+        </div>
+      </a>
+    </div>
+  </div>
+    
+
+  <div class="poster nt-3">
+    <div class="poster__ing  reveal">
+       <img src="negozio2.jpg" alt=""class="">
+    </div>
+    <div class="poster__content reveal">
+      <h3 class="big-text">Our shop</h3>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae quos impedit ipsam quisquam, natus libero soluta error laudantium. Architecto possimus autem impedit tempore nulla corrupti illo vero ratione odio quia.</p>
+      <a href="" class="button">Go on maps</a>
+    </div>
+  </div>
 
   <div class="footer">
     <div class="col-1">
@@ -52,25 +211,34 @@
     </div>
   </div>
 
+
+
+
+  
   <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/flickity/3.0.0/flickity.pkgd.min.js" integrity="sha512-achKCfKcYJg0u0J7UDJZbtrffUwtTLQMFSn28bDJ1Xl9DWkl/6VDT3LMfVTo09V51hmnjrrOTbtg4rEgg0QArA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-<!-- caselle che scorrono -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/flickity/2.2.1/flickity.pkgd.min.js" integrity="sha512-Nx/M3T/fWprNarYOrnl+gfWZ25YlZtSNmhjHeC0+2gCtyAdDFXqaORJBj1dC427zt3z/HwkUpPX+cxzonjUgrA==" crossorigin="anonymous"></script>
-<!-- fine caselle -->
+
   <script>
     $( document ).ready(function() {
 
-      /* Open Panel */
-      $( ".hamburger" ).on('click', function() {
+
+      $( ".bar" ).on('click', function() {
         $(".menu").toggleClass("menu--open");
+        $( ".details__content").removeClass("details__content--open")
       });
+
+      $( ".details-h" ).on('click', function() {    
+                $(this).find(".details__content-h").toggleClass("details__content--open");
+        });
       
     });
 
     ScrollReveal().reveal('.reveal',{ distance: '100px', duration: 1500, easing:'cubic-bezier(.215, .61, .355, 1)', interval: 600 } );
 
-    ScrollReveal().reveal('.zoom',{ duration: 1500, easing:'cubic-bezier(.215, .61, .355, 1)', interval: 200, scale:0.65, mobile:false} );
+    ScrollReveal().reveal('.zoom',{ duration: 800, easing:'cubic-bezier(.215, .61, .355, 1)', interval: 200, scale:0.85, mobile:false} );
   </script>
+
+
 
 
 </body>

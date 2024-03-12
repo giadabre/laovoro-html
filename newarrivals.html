@@ -17,6 +17,44 @@
     <link href="https://fonts.googleapis.com/css2?family=Bacasime+Antique&family=Elsie+Swash+Caps:wght@400;900&family=Italiana&display=swap" rel="stylesheet">
 </head>
 <body class="italiana-regular">
+
+    <div class="header">
+        <label>
+            <input type="checkbox">
+                <div class="bar">
+                    <span class="top"></span>
+                    <span class="middle"></span>
+                    <span class="bottom"></span>
+                </div>
+        </label>
+        
+    
+    
+        <div class="menu med-text">
+          <ul>
+            <li><a href="home.html">home</a></li>
+            <li>
+              <div class="details-h">
+                <div class="details__title-h">
+                    Our jewels
+                </div>
+                <div class="details__content-h">
+                  <a class="italiana-regular" href="anelli.html">>rings</a>
+                  <a class="italiana-regular" href="orecchini.html">>earrings</a>
+                  <a class="italiana-regular" href="collane.html">>necklaces</a>
+                  <a class="italiana-regular" href="pendants.html">>pendants</a>
+                  <a class="italiana-regular" href="newarrivals.html">>new arrivals</a>
+                  <a class="italiana-regular" href="prodottiscontati.html">>promotions</a>
+                </div>
+            </div>
+            </li>
+          </ul>
+        </div>
+    
+        <div class="logo">
+            <img class="immagine" src="logo2.jpeg" alt="">
+        </div>
+      </div>
     
     <!-- parte articoli -->
     <section class="products" id="products">
@@ -27,16 +65,16 @@
             <div class="box">
                 <span class="discountnew">NEW</span>
                 <div class="image">
-                    <img src="collane7.png" alt="">
+                    <img src="ribbed1.webp" alt="">
                     <div class="icons">
-                        <a href="#" ></a>
-                        <a href="#" >Add to cart</a>
-                        <a href="#" ></a>
+                        <a href="ribbed-necklace.html" ></a>
+                        <a href="ribbed-necklace.html" >show more</a>
+                        <a href="ribbed-necklace.html" ></a>
                     </div>
                 </div>
                 <div class="content">
                     <h3>Heart Locket Necklace</h3>
-                    <div class="price">$175.99 </div>
+                    <div class="price">$60.00 </div>
                 </div>
             </div>
 
@@ -45,30 +83,30 @@
                 <div class="image">
                     <img src="anelli3.png" alt="">
                     <div class="icons">
-                        <a href="#" ></a>
-                        <a href="#" >Add to cart</a>
-                        <a href="#" ></a>
+                        <a href="luna-ring-emerald.html" ></a>
+                        <a href="luna-ring-emerald.html" >show more</a>
+                        <a href="luna-ring-emerald.html" ></a>
                     </div>
                 </div>
                 <div class="content">
-                    <h3>Classic Band Ring</h3>
-                    <div class="price">$160.99 </div>
+                    <h3>Luna Emerald Ring</h3>
+                    <div class="price">$210.00</div>
                 </div>
             </div>
 
             <div class="box">
                 <span class="discountnew">NEW</span>
                 <div class="image">
-                    <img src="bracciale6.png" alt="">
+                    <img src="bold-earring1.webp" alt="">
                     <div class="icons">
-                        <a href="#" ></a>
-                        <a href="#" >Add to cart</a>
-                        <a href="#"></a>
+                        <a href="bold-earring.html" ></a>
+                        <a href="baroque-earring.html" >show more</a>
+                        <a href="baroque-earring.html"></a>
                     </div>
                 </div>
                 <div class="content">
-                    <h3>Link Bracelet Diamond</h3>
-                    <div class="price">$165.99 </div>
+                    <h3>Bold Earring</h3>
+                    <div class="price">$67.00 </div>
                 </div>
             </div>
 
@@ -77,14 +115,14 @@
                 <div class="image">
                     <img src="pendenti3.png" alt="">
                     <div class="icons">
-                        <a href="#" ></a>
-                        <a href="#" >Add to cart</a>
-                        <a href="#" ></a>
+                        <a href="pendant-emerald.html" ></a>
+                        <a href="pendant-emerald.html" >show more</a>
+                        <a href="pendant-emerald.html" ></a>
                     </div>
                 </div>
                 <div class="content">
                     <h3>Pendant Emerald</h3>
-                    <div class="price">$160.99 </div>
+                    <div class="price">$150.00 </div>
                 </div>
             </div>
 
@@ -130,9 +168,16 @@
       <script>
         $( document ).ready(function() {
     
-          /* Open Panel */
-          $( ".hamburger" ).on('click', function() {
+            $( ".bar" ).on('click', function() {
             $(".menu").toggleClass("menu--open");
+        });
+
+        $( ".details-h" ).on('click', function() {    
+                $(this).find(".details__content-h").toggleClass("details__content--open");
+            });
+
+          $( ".details" ).on('click', function() {    
+              $(this).find(".details__content").toggleClass("details__content--open");
           });
           
         });
