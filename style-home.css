@@ -640,6 +640,10 @@ input[type="checkbox"]:checked ~ .bar .middle{
     flex-grow: 2;
 }
 
+.col-3 p{
+    color: #fff;
+}
+
 .footer div h3 {
     font-weight: 300;
     margin-bottom: 30px;
